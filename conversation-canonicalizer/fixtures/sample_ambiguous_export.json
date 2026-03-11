@@ -1,0 +1,15 @@
+{
+  "conversations": [
+    {
+      "id": "conv-amb-001",
+      "title": "Ambiguous role message",
+      "messages": [
+        {
+          "role": ["user", "assistant"],
+          "content": "This role is ambiguous",
+          "timestamp": "2026-03-11T11:00:00Z"
+        }
+      ]
+    }
+  ]
+}
