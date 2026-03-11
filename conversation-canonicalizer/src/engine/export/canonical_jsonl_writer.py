@@ -1,5 +1,3 @@
-"""Purpose: write deterministic canonical JSONL output."""
-
 from __future__ import annotations
 
 import json

@@ -1,3 +1,4 @@
+
 """Purpose: export-stage tests for deterministic JSON/JSONL parity."""
 
 from __future__ import annotations
@@ -85,3 +86,4 @@ def test_exported_records_include_required_canonical_fields(tmp_path: Path) -> N
         assert "canonical_id" in record
         assert "messages" in record
         assert "flags" in record
+

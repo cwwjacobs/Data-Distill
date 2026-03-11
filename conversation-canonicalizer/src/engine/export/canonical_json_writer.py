@@ -1,5 +1,3 @@
-"""Purpose: write deterministic canonical JSON output."""
-
 from __future__ import annotations
 
 from dataclasses import asdict, is_dataclass
