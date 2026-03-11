@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from hashlib import sha256
+
 from engine.canonical.flag_emitter import emit_flags
 from engine.canonical.message_normalizer import normalize_messages
 from schemas.canonical_record import CanonicalRecord
@@ -10,7 +12,7 @@ from schemas.raw_record import RawRecord
 
 def _build_canonical_id(source_file_id: str, source_record_index: int) -> str:
     """Derive a deterministic canonical ID from source linkage."""
-    return f"{source_file_id}:{source_record_index}"
+    return sha256(f"{source_file_id}|{source_record_index}".encode("utf-8")).hexdigest()
 
 
 def build_canonical(raw_records: list[RawRecord]) -> list[CanonicalRecord]:

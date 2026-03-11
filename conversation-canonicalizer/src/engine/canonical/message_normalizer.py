@@ -29,7 +29,7 @@ def normalize_messages(raw_record: RawRecord) -> list[CanonicalMessage]:
             CanonicalMessage(
                 message_index=message_index,
                 role=role,
-                content=content if isinstance(content, str) else str(content),
+                content=content if isinstance(content, str) else "",
                 timestamp=timestamp if isinstance(timestamp, str) else None,
             )
         )
