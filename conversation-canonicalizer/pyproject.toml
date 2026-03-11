@@ -1,0 +1,12 @@
+# Purpose: Phase 1 project metadata and dependency placeholder.
+
+[project]
+name = "conversation-canonicalizer"
+version = "0.1.0"
+description = "Phase 1 skeleton only"
+requires-python = ">=3.11"
+
+# TODO
+# - Add minimal runtime dependencies.
+# - Add minimal test dependencies.
+# - Add entrypoints when implementation begins.
